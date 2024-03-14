@@ -23,6 +23,26 @@
     <div class="grid gap-2 lg:w-full justify-center sm:justify-center sm:items-center sm:h-full">
 
       <div class="grid gap-1">
+        <Label class="sr-only" for="firstName">First Name</Label>
+        <Input
+          id="firstName"
+          placeholder="first name"
+          type="name"
+          autocapitalize="none"
+          autocomplete="none"
+          autocorrect="off"
+          disabled={isLoading}
+        />
+        <Label class="sr-only" for="lastName">Last Name</Label>
+        <Input
+          id="lastName"
+          placeholder="last name"
+          type="name"
+          autocapitalize="none"
+          autocomplete="none"
+          autocorrect="off"
+          disabled={isLoading}
+        />
         <Label class="sr-only" for="email">Email</Label>
         <Input
           id="email"
@@ -44,7 +64,7 @@
           disabled={isLoading}
         />
       </div>
-      <Button disabled={isLoading}>Login</Button>
+      <Button disabled={isLoading}>Sign up</Button>
     </div>
   </form>
 </div>
