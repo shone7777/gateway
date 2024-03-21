@@ -16,12 +16,17 @@
       isLoading = false;
     }, 3000);
   }
+  const handleClick = () => {
+    // Redirect to the user page
+    location.href = "/user";
+  };
 </script>
 
 <div class={cn("grid gap-6", className)} {...$$restProps}>
   <form on:submit|preventDefault={onSubmit}>
-    <div class="grid gap-2 lg:w-full justify-center sm:justify-center sm:items-center sm:h-full">
-
+    <div
+      class="grid gap-2 lg:w-full justify-center sm:justify-center sm:items-center sm:h-full"
+    >
       <div class="grid gap-1">
         <Label class="sr-only" for="email">Email</Label>
         <Input
@@ -44,7 +49,7 @@
           disabled={isLoading}
         />
       </div>
-      <Button disabled={isLoading}>Login</Button>
+      <Button on:click={handleClick}>Login</Button>
     </div>
   </form>
 </div>

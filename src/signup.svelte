@@ -1,16 +1,12 @@
 <script lang="ts">
   import { Button } from "$lib/components/ui/button";
   import UserAuthForm2 from "./lib/components/new-user-form.svelte";
-  import AuthenticationLight from "./lib/components/img/authentication-light.png";
-  import AuthenticationDark from "./lib/components/img/authentication-dark.png";
 </script>
 
-
-
-<div class="container relative h-[800px] flex-col items-center justify-center sm:grid md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
-  <div
-    class="lg:p-8 sm:grid"
-  >
+<div
+  class="container relative h-[800px] flex-col items-center justify-center sm:grid md:grid lg:max-w-none lg:grid-cols-2 lg:px-0"
+>
+  <div class="lg:p-8 sm:grid">
     <div
       class="mx-auto flex w-full flex-col justify-center sm:items-center space-y-6 sm:w-[350px]"
     >
